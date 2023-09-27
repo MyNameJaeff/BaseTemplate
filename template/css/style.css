@@ -29,14 +29,19 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
-
-.showOnDesktop a {
-    text-decoration: none;
+.showOnDesktop a:not(.active) {
     color: whitesmoke;
+    text-decoration: none;
     font-size: 2.5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.showOnDesktop .active{
+    background-color: #ddd3d2;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px white;
+    color: black;
+}
 .showOnDesktop a:hover {
     background-color: #ddd3d2;
     border-radius: 10px;
@@ -128,4 +133,9 @@ main {
 
 .div9 {
     grid-area: 3 / 3 / 4 / 4;
+}
+.active{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
 }
